@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    body, html {
+      height: 100%;
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: lightseagreen;
+    }
+    .container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100hv; /* Set the height of the container to 100% of the viewport height */
+    }
+    .contact-form {
+      width: 80%; /* Set the width of the form */
+      max-width: 600px;
+      padding: 30px;
+      background-color:lightseagreen;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    .contact-form h1 {
+      text-align: center;
+      color: #333;
+      margin-bottom: 20px;
+    }
+    .contact-form p {
+      text-align: center;
+      color: #e9f2f2;
+      margin-bottom: 20px;
+    }
+    .contact-form p:last-child {
+      margin-bottom: 0;
+    }
+    .form-group {
+      margin-bottom: 20px;
+    }
+    .form-group label {
+      display: block;
+      font-weight: bold;
+      margin-bottom: 5px;
+      color: #333;
+    }
+    .form-group input[type="text"],
+    .form-group input[type="email"],
+    .form-group textarea {
+      width: 100%;
+      padding: 12px;
+      border: 2px solid #ccc;
+      border-radius: 5px;
+      outline: none;
+      transition: border-color 0.3s;
+      font-size: 16px;
+    }
+    .form-group input[type="text"]:focus,
+    .form-group input[type="email"]:focus,
+    .form-group textarea:focus {
+      border-color: #06333a;
+    }
+    .form-group textarea {
+      height: 150px;
+    }
+    .btn {
+      display: inline-block;
+      padding: 12px 24px;
+      background-color: #163335;
+      color: rgb(8, 253, 253);
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+      text-decoration: none;
+    }
+    .btn:hover {
+      background-color: #898d8e;
+    }
+    .contact-info {
+      margin-top: 30px;
+      text-align: center;
+    }
+    .contact-info h2 {
+      color: #333;
+      margin-bottom: 10px;
+    }
+    .contact-info ul {
+      list-style: none;
+      padding: 0;
+    }
+    .contact-info li {
+      margin-bottom: 10px;
+      font-size: 16px;
+      color: #555;
+    }
+    .contact-info a {
+      color: #fef8f6;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+    .contact-info a:hover {
+      color: #f6f7f7;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <nav>
+    <ul>
+      <li><a href="home.html">Home</a></li>
+      <li><a href="about.html">About Me</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="resume.html">Resume</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <div class="container">
+    <section class="contact-form">
+      <h1>Contact Me</h1>
+      <p>Have a project in mind or want to discuss collaboration? Feel free to get in touch!</p>
+      <form action="submit_contact_form.php" method="POST">
+        <div class="form-group">
+          <label for="name">Your Name:</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Your Email:</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+
+        <div class="form-group">
+          <label for="message">Your Message:</label>
+          <textarea id="message" name="message" rows="6" required></textarea>
+        </div>
+
+        <button type="submit" class="btn">Send Message</button>
+      </form>
+    </section>
+
+    <section class="contact-info">
+      <h2>Get in Touch</h2>
+      <ul>
+        <li>Email: <a href="mailto:your.email@example.com">your.email@example.com</a></li>
+        <li>Phone: +123 456 7890</li>
+        <li>LinkedIn: <a href="https://www.linkedin.com/in/yourprofile">Your LinkedIn Profile</a></li>
+      </ul>
+    </section>
+  </div>
+</main>
+
+<center>
+  <p>&copy; 2024 Your Name. All rights reserved.</p>
+</center>
+
+</body>
+</html>
+
+ 
